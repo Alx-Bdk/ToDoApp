@@ -1,0 +1,7 @@
+<app-add-item (addItem)="addItem($event)"></app-add-item>
+
+<app-item *ngFor="let item of list" 
+          [item]="item" 
+          (onDeleteItem)="deleteItem(item)" 
+          (onImportant)="onImportant(item)">
+          {{item.text}}</app-item>

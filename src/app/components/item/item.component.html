@@ -1,0 +1,6 @@
+<div [ngClass]="{important: item.important }" 
+     (dblclick)="onDbClick(item)" class="item">
+    <h3>{{item.text}} <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onClick(item)"></fa-icon></h3>
+
+    <p>{{ item.ziua }}</p>
+</div>

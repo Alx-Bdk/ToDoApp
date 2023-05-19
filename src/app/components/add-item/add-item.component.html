@@ -1,0 +1,21 @@
+<form *ngIf="showAddItem" class="form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="text">Activitate</label>
+
+        <input [(ngModel)]="text" type="text" name="text" id="text" placeholder="Adaugă programare">
+    </div>
+
+    <div class="form-control">
+        <label for="text">Data și ora</label>
+
+        <input [(ngModel)]="ziua" type="text" name="ziua" id="ziua" placeholder="Adaugă dată">
+    </div>
+    
+    <div class="form-control form-control-important">
+        <label for="text">Important</label>
+
+        <input [(ngModel)]="important" type="checkbox" name="important" id="ziua">
+    </div>
+
+    <input type="submit" value="Salvează" class="button button-block">
+</form>
